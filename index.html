@@ -7,8 +7,75 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <section>
+    <header>
+        <h1 >Temperature Converter</h1>
+    </header>
+
+    <main>
+        <br>
+        <div class="introduction">
+            <p>Masukkan suhu derajat Celsius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi ke Fahrenheit (&deg;F).</p>
+        </div>
+        <br>
+        <div class="input-group">
+            <label for="celsius">Celsius (&deg;C):</label>
+            <textarea
+                id="celsius"
+                rows="1"
+            ></textarea>
+        </div>
+
+        <div class="button-group">
+            <button id="btnConvert">Konversi</button>
+            <button
+                id="btnReset"
+                class="reset"
+            >
+                Reset
+            </button>
+            <button
+                id="btnReverse"
+                class="reverse"
+            >
+                Reverse
+            </button>
+        </div>
+
+        <div class="input-group">
+            <label for="fahrenheit">Fahrenheit (&deg;F):</label>
+            <textarea id="fahrenheit" readonly rows="1"></textarea>
+        </div>
+
+        <div class="input-group">
+            <label>Cara Kalkulasi:</label>
+            <textarea id="calculation" readonly rows="1"></textarea>
+        </div>
+        <h2>Fahrenheit ke Celsius</h2>
+        <div class="formula">
+            <h3 class="formula-title">
+                Cara Konversi Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)
+            </h3>
+            <p>
+                Suhu <span class="text-italic">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span class="text-italic">S</span> dalam derajat Celsius (&deg;C) kali 9/5 tambah 32.
+            </p>
+
+            <p>
+                <span class="text-italic">S</span><sub>(&deg;F)</sub> = (<span class="text-italic">S</span><sub>(°C)</sub> × 9/5) + 32
+            </p>
+
+            <p>atau</p>
+
+            <p>
+                <span class="text-italic">S</span><sub>(&deg;F)</sub> = (<span class="text-italic">S</span><sub>(&deg;C)</sub>× 1.8) + 32
+            </p>
+        </div>
+    </div>
+    </section>
+    <script src="js/script.js"></script>
+    </main>
+    <footer>
+        <p>&copy;2025 Desslyn. All right reserved.</p>
+    </footer>
 </body>
 </html>
